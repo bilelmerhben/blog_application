@@ -8,9 +8,23 @@ import { BlogComponent } from './blog/blog.component';
 import { AddBlogComponent } from './add-blog/add-blog.component';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 import { NavbarComponent } from './Shared/navbar/navbar.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
-  declarations: [AppComponent, BlogComponent, AddBlogComponent, BlogDetailComponent, NavbarComponent],
-  imports: [BrowserModule, AppRoutingModule, MatCardModule],
+  declarations: [
+    AppComponent,
+    BlogComponent,
+    AddBlogComponent,
+    BlogDetailComponent,
+    NavbarComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MatCardModule,
+    MatButtonModule,
+    MatIconModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
