@@ -1,14 +1,16 @@
 .example-card {
-  max-width: 400px;
+  max-width: 500px;
+  background-color: rgb(235, 240, 242);
+  margin: 1rem;
 }
 
 .example-header-image {
-  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-image: url("../../assets/blog.jpg");
   background-size: cover;
 }
 .cardUp {
-  border: 20px green solid;
+  border: 10px green solid;
 }
 .cardDown {
-  border: 20px red solid;
+  border: 10px red solid;
 }
