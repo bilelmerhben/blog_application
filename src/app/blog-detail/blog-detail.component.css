@@ -1,0 +1,9 @@
+.example-card {
+  background-color: #192265;
+  margin: 5px;
+  color: cornsilk;
+}
+
+.example-header-image {
+  background-size: cover;
+}

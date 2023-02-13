@@ -1,25 +1,51 @@
 <div class="container" style="width: 50em; margin-top: 5em">
-  <input
-    class="form-control form-control-lg"
-    type="text"
-    placeholder="Title"
-    aria-label=".form-control-lg example"
-  />
-  <input
-    style="margin-top: 1em"
-    class="form-control"
-    type="text"
-    placeholder="Author"
-    aria-label="default input example"
-  />
-
-  <div class="mb-3" style="margin-top: 1em">
-    <label for="exampleFormControlTextarea1" class="form-label">Content</label>
-    <textarea
+  <h1>New Blog</h1>
+  <form [formGroup]="blog">
+    <input
+      class="form-control form-control-lg"
+      type="text"
+      placeholder="Title"
+      aria-label=".form-control-lg example"
+      formControlName="title"
+    />
+    <input
+      style="margin-top: 1em"
       class="form-control"
-      id="exampleFormControlTextarea1"
-      rows="3"
-    ></textarea>
-  </div>
-  <button mat-button type="button" class="btn btn-warning">Post</button>
+      type="text"
+      placeholder="Author"
+      aria-label="default input example"
+      formControlName="author"
+    />
+
+    <div class="mb-3" style="margin-top: 1em">
+      <label for="exampleFormControlTextarea1" class="form-label"
+        >Content</label
+      >
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="3"
+        formControlName="content"
+      ></textarea>
+    </div>
+    <div class="mb-3" style="margin-top: 1em">
+      <label for="exampleFormControlTextarea1" class="form-label"
+        >More Information</label
+      >
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="3"
+        formControlName="information"
+      ></textarea>
+    </div>
+    <button
+      (click)="addBlog()"
+      mat-button
+      type="button"
+      class="btn btn-warning"
+    >
+      Post
+    </button>
+  </form>
 </div>

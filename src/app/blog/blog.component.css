@@ -1,7 +1,7 @@
 .example-card {
-  max-width: 500px;
-  background-color: rgb(235, 240, 242);
-  margin: 1rem;
+  background-color: #081049;
+  margin: 5px;
+  color: cornsilk;
 }
 
 .example-header-image {
@@ -9,8 +9,8 @@
   background-size: cover;
 }
 .cardUp {
-  border: 10px green solid;
+  border: 8px green solid;
 }
 .cardDown {
-  border: 10px red solid;
+  border: 8px red solid;
 }
